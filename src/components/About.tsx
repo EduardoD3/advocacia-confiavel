@@ -25,56 +25,68 @@ const About = () => {
                   Sobre Maria José França
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  OAB/RO 0000 {/* Placeholder */}
+                  OAB/RO 9607
                 </p>
               </div>
 
               <p className="text-foreground leading-relaxed">
-                Com mais de 10 anos de experiência em Direito Previdenciário,
-                atuo com dedicação na defesa dos direitos de segurados do INSS,
-                especialmente em casos de benefícios negados injustamente.
+                Advogada com sólida experiência em Direito Previdenciário, Trabalhista, 
+                Eleitoral, Cível, Imobiliário e de Família. Atuação pautada pela ética, 
+                dedicação e comprometimento com a defesa dos direitos de cada cliente.
               </p>
 
               <p className="text-foreground leading-relaxed">
-                Minha missão é oferecer atendimento humanizado e personalizado,
-                garantindo que cada cliente compreenda todas as etapas do
-                processo e tenha seus direitos plenamente assegurados.
+                Atendimento humanizado com foco em soluções jurídicas eficientes e resultados concretos. 
+                Cada caso é tratado com máxima dedicação e respeito às necessidades individuais dos clientes.
               </p>
 
               {/* Especializações */}
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <GraduationCap className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+                  <GraduationCap className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-foreground">Formação</p>
                     <p className="text-sm text-muted-foreground">
-                      Graduação em Direito • Pós-graduação em Direito
-                      Previdenciário
+                      Graduação em Direito • Especializações em múltiplas áreas
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Award className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+                  <Award className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-foreground">Especializações</p>
+                    <p className="font-semibold text-foreground">Áreas de Atuação</p>
                     <p className="text-sm text-muted-foreground">
-                      Recursos Administrativos • Revisão de Benefícios • Ações
-                      Previdenciárias
+                      Previdenciário • Trabalhista • Eleitoral • Cível • Imobiliário • Família
                     </p>
                   </div>
                 </div>
               </div>
 
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <p className="text-2xl font-bold text-primary mb-1">5+</p>
+                  <p className="text-sm text-muted-foreground">Áreas de atuação</p>
+                </div>
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <p className="text-2xl font-bold text-primary mb-1">100%</p>
+                  <p className="text-sm text-muted-foreground">Dedicação aos casos</p>
+                </div>
+              </div>
+
               {/* Contato */}
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                <Button variant="default" size="sm" className="gap-2">
-                  <Phone className="w-4 h-4" />
-                  (69) 9 9999-9999 {/* Placeholder */}
+                <Button variant="default" size="sm" className="gap-2" asChild>
+                  <a href="tel:+556999449223">
+                    <Phone className="w-4 h-4" />
+                    (69) 99944-9223
+                  </a>
                 </Button>
-                <Button variant="outline" size="sm" className="gap-2">
-                  <Mail className="w-4 h-4" />
-                  contato@mjfranca.adv.br {/* Placeholder */}
+                <Button variant="outline" size="sm" className="gap-2" asChild>
+                  <a href="mailto:contato@mjfranca.adv.br">
+                    <Mail className="w-4 h-4" />
+                    Enviar e-mail
+                  </a>
                 </Button>
               </div>
             </div>

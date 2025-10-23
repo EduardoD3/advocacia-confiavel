@@ -9,10 +9,10 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "Advogada Maria José França — Recursos INSS Negado | Acompanhamento jurídico especializado",
-  description = "Pedido do INSS negado? Atendimento especializado para recorrer e reverter decisões. Avaliação gratuita — suporte em todo o processo. Contato via WhatsApp.",
-  canonical = "https://www.mjfranca.adv.br", // Placeholder
-  ogImage = "https://www.mjfranca.adv.br/og-image.jpg", // Placeholder
+  title = "Maria José França - Advocacia & Consultoria | OAB/RO 9607",
+  description = "Advocacia especializada em Direito Previdenciário, Trabalhista, Eleitoral, Cível, Imobiliário e Família. Atendimento personalizado em Porto Velho/RO. Avaliação gratuita.",
+  canonical = "https://www.mjfranca.adv.br",
+  ogImage = "https://www.mjfranca.adv.br/og-image.jpg",
 }: SEOProps) => {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -20,11 +20,11 @@ const SEO = ({
       {
         "@type": "LegalService",
         "@id": `${canonical}/#legalservice`,
-        name: "Maria José França - Advocacia",
+        name: "Maria José França - Advocacia & Consultoria",
         description:
-          "Escritório especializado em Direito Previdenciário e Cível, com foco em recursos de benefícios negados pelo INSS",
+          "Escritório especializado em Direito Previdenciário, Trabalhista, Eleitoral, Cível, Imobiliário e de Família",
         url: canonical,
-        telephone: "+5569999999999", // Placeholder
+        telephone: "+556999449223",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Rua Exemplo, 123 - Centro",
@@ -66,8 +66,8 @@ const SEO = ({
         worksFor: {
           "@id": `${canonical}/#legalservice`,
         },
-        telephone: "+5569999999999", // Placeholder
-        email: "contato@mjfranca.adv.br", // Placeholder
+        telephone: "+556999449223",
+        email: "contato@mjfranca.adv.br",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Porto Velho",
@@ -76,9 +76,11 @@ const SEO = ({
         },
         knowsAbout: [
           "Direito Previdenciário",
-          "Recursos INSS",
+          "Direito Trabalhista",
+          "Direito Eleitoral",
           "Direito Cível",
-          "Revisão de Benefícios",
+          "Direito Imobiliário",
+          "Direito de Família e Sucessões",
         ],
       },
     ],

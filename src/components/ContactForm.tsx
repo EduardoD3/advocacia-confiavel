@@ -19,17 +19,19 @@ import { contactFormSchema, ContactFormValues } from "@/lib/validations/contact"
 import { Upload, Loader2 } from "lucide-react";
 
 const problemTypes = [
-  "Auxílio-doença negado",
-  "Aposentadoria negada",
-  "Revisão de benefício",
-  "BPC/LOAS negado",
-  "Pensão por morte",
+  "Direito Previdenciário",
+  "Direito Trabalhista",
+  "Direito Eleitoral",
+  "Direito Imobiliário",
+  "Direito de Família e Sucessões",
   "Outro",
 ];
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [fileName, setFileName] = useState<string>("");
+  const whatsappNumber = "+554898462142";
+  const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[\s\(\)\-\+]/g, "")}`;
   const { toast } = useToast();
 
   const {
@@ -107,16 +109,15 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact-form" className="py-16 md:py-24 bg-muted/50">
+    <section id="contact" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Avaliação gratuita do seu caso
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Avaliação Gratuita do Seu Caso
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Preencha o formulário abaixo e receba uma análise inicial em até
-              24-48 horas
+            <p className="text-lg md:text-xl text-muted-foreground">
+              Preencha o formulário abaixo e receba uma análise inicial em até 24-48 horas
             </p>
           </div>
 
@@ -198,7 +199,7 @@ const ContactForm = () => {
               <Label htmlFor="message">Descreva seu caso *</Label>
               <Textarea
                 id="message"
-                placeholder="Conte-nos brevemente sobre sua situação com o INSS..."
+                placeholder="Descreva brevemente sua situação jurídica..."
                 rows={5}
                 {...register("message")}
                 aria-invalid={!!errors.message}

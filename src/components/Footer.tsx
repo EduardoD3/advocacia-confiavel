@@ -23,11 +23,15 @@ const Footer = () => {
             <ul className="space-y-3 text-sm opacity-90">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>(69) 9 9999-9999</span> {/* Placeholder */}
+                <span>(69) 99944-9223</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>WhatsApp: (48) 98462-1426</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>contato@mjfranca.adv.br</span> {/* Placeholder */}
+                <span>contato@mjfranca.adv.br</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
@@ -108,10 +112,10 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-primary-foreground/10 mt-10 pt-8 text-center text-sm opacity-75">
           <p>
-            © {currentYear} Maria José França - Advocacia. Todos os direitos
+            © {currentYear} Maria José França - Advocacia & Consultoria. Todos os direitos
             reservados.
           </p>
-          <p className="mt-1">OAB/RO 0000</p> {/* Placeholder */}
+          <p className="mt-1">OAB/RO 9607</p>
         </div>
       </div>
     </footer>
