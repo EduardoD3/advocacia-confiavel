@@ -1,5 +1,6 @@
 // Seção de Serviços com cards destacando áreas de atuação
 import { Scale, Briefcase, Users, Home, Heart, Vote } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -8,6 +9,7 @@ const services = [
     description:
       "Aposentadorias, auxílios, pensões, revisões de benefícios, recursos administrativos e judiciais perante o INSS. Garantimos seus direitos previdenciários com máxima dedicação.",
     highlighted: true,
+    link: "/direito-previdenciario",
   },
   {
     icon: Briefcase,
@@ -15,6 +17,7 @@ const services = [
     description:
       "Defesa de direitos trabalhistas, rescisões contratuais, verbas rescisórias, horas extras, danos morais e materiais. Atuação completa em questões trabalhistas.",
     highlighted: true,
+    link: "/direito-trabalhista",
   },
   {
     icon: Vote,
@@ -22,6 +25,7 @@ const services = [
     description:
       "Consultoria em questões eleitorais, registro de candidaturas, prestação de contas, impugnações e recursos eleitorais. Assessoria especializada para campanhas.",
     highlighted: false,
+    link: "/direito-eleitoral",
   },
   {
     icon: Home,
@@ -29,6 +33,7 @@ const services = [
     description:
       "Contratos de compra e venda, locação, usucapião, regularização de imóveis, ações possessórias e assessoria completa em questões imobiliárias.",
     highlighted: false,
+    link: "/direito-imobiliario",
   },
   {
     icon: Heart,
@@ -36,6 +41,7 @@ const services = [
     description:
       "Divórcios, guarda, pensão alimentícia, inventários, testamentos e partilhas. Atendimento humanizado em momentos delicados da vida familiar.",
     highlighted: false,
+    link: "/direito-familia",
   },
 ];
 
@@ -57,9 +63,10 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div
+              <Link
                 key={index}
-                className={`group bg-card rounded-xl p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 ${
+                to={service.link}
+                className={`group bg-card rounded-xl p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 cursor-pointer ${
                   service.highlighted ? "border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent" : ""
                 }`}
               >
@@ -74,10 +81,13 @@ const Services = () => {
                 <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {service.description}
                 </p>
-              </div>
+                <span className="text-sm font-semibold text-primary group-hover:underline">
+                  Saiba mais →
+                </span>
+              </Link>
             );
           })}
         </div>

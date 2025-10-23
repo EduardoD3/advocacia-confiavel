@@ -6,7 +6,8 @@ import logoImg from "@/assets/logo.jpg";
 const Header = () => {
   const phoneNumber = "+556999449223";
   const whatsappNumber = "+554898462142";
-  const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}`;
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços jurídicos.");
+  const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${whatsappMessage}`;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-card/98 backdrop-blur-md shadow-soft border-b border-border">
@@ -16,7 +17,7 @@ const Header = () => {
             <img 
               src={logoImg} 
               alt="Maria José França - Advocacia" 
-              className="h-12 w-12 md:h-14 md:w-14 object-contain"
+              className="h-12 w-12 md:h-14 md:w-14 object-cover rounded-full"
             />
             <div className="flex flex-col">
               <h1 className="text-lg md:text-xl font-bold text-primary leading-tight">
