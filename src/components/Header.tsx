@@ -70,7 +70,7 @@ const Header = () => {
               
               {areasMenuOpen && (
                 <div 
-                  className="absolute top-full left-0 mt-2 w-64 bg-card rounded-lg shadow-elevated border border-border py-2 animate-fade-in"
+                  className="absolute top-full left-0  w-64 bg-card rounded-lg shadow-elevated border border-border py-2 animate-fade-in"
                   onMouseEnter={() => setAreasMenuOpen(true)}
                   onMouseLeave={() => setAreasMenuOpen(false)}
                 >
