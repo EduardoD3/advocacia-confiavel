@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
             A excelência como cultura e{" "}
-            <span className="text-secondary">foco permanente na sua satisfação</span>
+            <span className="text-white">foco permanente na sua satisfação</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
