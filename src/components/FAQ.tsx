@@ -43,14 +43,14 @@ const FAQ = () => {
   return (
     <section className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Perguntas frequentes
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tire suas dúvidas sobre recursos e processos do INSS
-          </p>
-        </div>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          Perguntas Frequentes
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Esclarecemos as principais dúvidas sobre nossos serviços jurídicos
+        </p>
+      </div>
 
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
