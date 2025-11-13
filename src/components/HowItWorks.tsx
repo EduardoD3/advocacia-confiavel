@@ -26,14 +26,14 @@ const HowItWorks = () => {
   return (
     <section className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Como funciona
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Processo simples e transparente para reverter a negativa do INSS
-          </p>
-        </div>
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+          Como Funciona
+        </h2>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+          Processo transparente e eficiente para garantir seus direitos com excelência
+        </p>
+      </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => {

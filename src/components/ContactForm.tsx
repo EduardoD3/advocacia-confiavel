@@ -22,6 +22,7 @@ const problemTypes = [
   "Direito Previdenciário",
   "Direito Trabalhista",
   "Direito Eleitoral",
+  "Direito Criminal",
   "Direito Imobiliário",
   "Direito de Família e Sucessões",
   "Outro",
@@ -113,14 +114,14 @@ const ContactForm = () => {
     <section id="contact" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Avaliação Gratuita do Seu Caso
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Preencha o formulário abaixo e receba uma análise inicial em até 24-48 horas
-            </p>
-          </div>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          Entre em Contato
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Solicite uma consulta ou esclareça suas dúvidas. Retornaremos em até 24 horas.
+        </p>
+      </div>
 
           <form
             onSubmit={handleSubmit(onSubmit)}

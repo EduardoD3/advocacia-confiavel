@@ -29,48 +29,43 @@ const About = () => {
                 </p>
               </div>
 
-              <p className="text-foreground leading-relaxed">
-                Advogada com sólida experiência em Direito Previdenciário, Trabalhista, 
-                Eleitoral, Cível, Imobiliário e de Família. Atuação pautada pela ética, 
-                dedicação e comprometimento com a defesa dos direitos de cada cliente.
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+                Advogada com sólida formação acadêmica e vasta experiência prática, 
+                comprometida em oferecer soluções jurídicas eficazes e personalizadas. 
+                Minha atuação é pautada pela ética profissional, transparência e dedicação integral a cada cliente.
               </p>
 
-              <p className="text-foreground leading-relaxed">
-                Atendimento humanizado com foco em soluções jurídicas eficientes e resultados concretos. 
-                Cada caso é tratado com máxima dedicação e respeito às necessidades individuais dos clientes.
-              </p>
-
-              {/* Especializações */}
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <GraduationCap className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-foreground">Formação</p>
-                    <p className="text-sm text-muted-foreground">
-                      Graduação em Direito • Especializações em múltiplas áreas
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Award className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-foreground">Áreas de Atuação</p>
-                    <p className="text-sm text-muted-foreground">
-                      Previdenciário • Trabalhista • Eleitoral • Cível • Imobiliário • Família
-                    </p>
-                  </div>
+              <div className="space-y-3 mb-6">
+                <h4 className="font-semibold text-foreground text-sm">
+                  Áreas de Especialização
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Direito Previdenciário",
+                    "Direito Trabalhista",
+                    "Direito Eleitoral",
+                    "Direito Criminal",
+                    "Direito Imobiliário",
+                    "Direito de Família e Sucessões",
+                  ].map((spec) => (
+                    <span
+                      key={spec}
+                      className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                    >
+                      {spec}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-muted/50 rounded-lg p-4">
-                  <p className="text-2xl font-bold text-primary mb-1">5+</p>
-                  <p className="text-sm text-muted-foreground">Áreas de atuação</p>
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="bg-muted/50 rounded-lg p-4 text-center">
+                  <p className="text-2xl font-bold text-primary mb-1">6</p>
+                  <p className="text-xs text-muted-foreground">Áreas de Especialização</p>
                 </div>
-                <div className="bg-muted/50 rounded-lg p-4">
+                <div className="bg-muted/50 rounded-lg p-4 text-center">
                   <p className="text-2xl font-bold text-primary mb-1">100%</p>
-                  <p className="text-sm text-muted-foreground">Dedicação aos casos</p>
+                  <p className="text-xs text-muted-foreground">Compromisso com Resultados</p>
                 </div>
               </div>
 

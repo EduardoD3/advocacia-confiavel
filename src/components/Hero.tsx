@@ -34,14 +34,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
-            Excelência como cultura e foco na
-            <br />
-            <span className="text-white/95">satisfação do cliente</span>
+            A excelência como cultura e{" "}
+            <span className="text-secondary">foco permanente na sua satisfação</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Advocacia especializada em Direito Previdenciário, Trabalhista, Eleitoral, 
-            Cível, Imobiliário e Família. Atendimento humanizado com soluções jurídicas eficientes.
+            Advocacia com estrutura dinâmica e abrangente. Equipe em contínuo processo de capacitação, 
+            primando pela cautela e pela conduta absolutamente ética.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base text-white/90 mb-12">
@@ -52,12 +51,12 @@ const Hero = () => {
             <span className="hidden sm:inline">•</span>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5" />
-              <span>Atendimento Personalizado</span>
+              <span>6 Áreas de Especialização</span>
             </div>
             <span className="hidden sm:inline">•</span>
             <div className="flex items-center gap-2">
               <Scale className="w-5 h-5" />
-              <span>Múltiplas Áreas de Atuação</span>
+              <span>Atendimento Humanizado</span>
             </div>
           </div>
 
