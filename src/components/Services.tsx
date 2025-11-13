@@ -7,7 +7,7 @@ const services = [
     icon: Scale,
     title: "Direito Previdenciário",
     description:
-      "Aposentadorias, auxílios, pensões, revisões de benefícios, recursos administrativos e judiciais perante o INSS. Garantimos seus direitos previdenciários com máxima dedicação.",
+      "Aposentadorias, auxílios, pensões, revisões de benefícios e recursos administrativos e judiciais junto ao INSS. Garantimos seus direitos previdenciários com dedicação e excelência.",
     highlighted: true,
     link: "/direito-previdenciario",
   },
@@ -15,7 +15,7 @@ const services = [
     icon: Briefcase,
     title: "Direito Trabalhista",
     description:
-      "Defesa de direitos trabalhistas, rescisões contratuais, verbas rescisórias, horas extras, danos morais e materiais. Atuação completa em questões trabalhistas.",
+      "Defesa de direitos trabalhistas, rescisões contratuais, verbas rescisórias, horas extras, danos morais e materiais. Atuação estratégica para proteger seus direitos.",
     highlighted: true,
     link: "/direito-trabalhista",
   },
@@ -23,15 +23,23 @@ const services = [
     icon: Vote,
     title: "Direito Eleitoral",
     description:
-      "Consultoria em questões eleitorais, registro de candidaturas, prestação de contas, impugnações e recursos eleitorais. Assessoria especializada para campanhas.",
+      "Consultoria especializada em questões eleitorais, registro de candidaturas, prestação de contas, impugnações e recursos. Assessoria jurídica completa para campanhas políticas.",
     highlighted: false,
     link: "/direito-eleitoral",
+  },
+  {
+    icon: Users,
+    title: "Direito Criminal",
+    description:
+      "Defesa criminal estratégica, assistência em inquéritos policiais, júri popular, recursos e habeas corpus. Atuação técnica e humanizada em todas as instâncias.",
+    highlighted: false,
+    link: "/direito-criminal",
   },
   {
     icon: Home,
     title: "Direito Imobiliário",
     description:
-      "Contratos de compra e venda, locação, usucapião, regularização de imóveis, ações possessórias e assessoria completa em questões imobiliárias.",
+      "Contratos de compra e venda, locação, usucapião, regularização de imóveis e ações possessórias. Assessoria jurídica completa para proteger seu patrimônio imobiliário.",
     highlighted: false,
     link: "/direito-imobiliario",
   },
@@ -39,7 +47,7 @@ const services = [
     icon: Heart,
     title: "Direito de Família e Sucessões",
     description:
-      "Divórcios, guarda, pensão alimentícia, inventários, testamentos e partilhas. Atendimento humanizado em momentos delicados da vida familiar.",
+      "Divórcios, guarda de menores, pensão alimentícia, inventários, testamentos e partilhas. Atendimento humanizado e sigiloso em momentos delicados da vida familiar.",
     highlighted: false,
     link: "/direito-familia",
   },
@@ -54,8 +62,7 @@ const Services = () => {
             Áreas de Atuação
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Assessoria jurídica completa e especializada nas principais áreas do direito, 
-            com atendimento personalizado e foco em resultados.
+            Assessoria jurídica especializada e personalizada, com foco permanente na satisfação do cliente e na excelência dos resultados.
           </p>
         </div>
 
