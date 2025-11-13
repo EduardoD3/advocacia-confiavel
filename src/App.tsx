@@ -10,6 +10,7 @@ import DireitoTrabalhista from "./pages/DireitoTrabalhista";
 import DireitoEleitoral from "./pages/DireitoEleitoral";
 import DireitoImobiliario from "./pages/DireitoImobiliario";
 import DireitoFamilia from "./pages/DireitoFamilia";
+import DireitoCriminal from "./pages/DireitoCriminal";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
