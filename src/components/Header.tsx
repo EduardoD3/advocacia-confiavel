@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Phone, MessageCircle, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import profileLogo from "@/assets/profile-logo.jpg";
+import profileLogo from "@/assets/maria-jose-seated.jpg";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

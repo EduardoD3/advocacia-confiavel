@@ -36,10 +36,10 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>
-                  Rua Exemplo, 123 - Centro
+                  Rua São Pedro, 1070 - Areias
                   <br />
-                  Porto Velho - RO, 76800-000
-                </span> {/* Placeholder */}
+                  São José - SC
+                </span>
               </li>
             </ul>
           </div>

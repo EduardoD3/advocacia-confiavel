@@ -1,7 +1,7 @@
 // Seção "Sobre Maria José França" com foto e mini-bio
-import { Mail, Phone, Award, GraduationCap } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/maria-jose-profile.jpg";
+import professionalImage from "@/assets/maria-jose-professional.jpg";
 
 const About = () => {
   return (
@@ -10,12 +10,23 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             {/* Imagem */}
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl -z-10"></div>
               <img
-                src={profileImage}
+                src={professionalImage}
                 alt="Dra. Maria José França - Advogada especialista em Direito Previdenciário"
-                className="w-full rounded-2xl shadow-elevated object-cover aspect-square"
+                className="w-full rounded-2xl shadow-elevated object-cover aspect-[3/4]"
               />
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Escritório</p>
+                    <p className="text-xs text-muted-foreground">Rua São Pedro, 1070 - Areias</p>
+                    <p className="text-xs text-muted-foreground">São José - SC</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Conteúdo */}
