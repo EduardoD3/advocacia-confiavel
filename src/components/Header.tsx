@@ -3,14 +3,14 @@ import { useState } from "react";
 import { Phone, MessageCircle, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import profileLogo from "@/assets/maria-jose-seated.jpg";
+import profileLogo from "@/assets/maria-jose-professional.jpg";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [areasMenuOpen, setAreasMenuOpen] = useState(false);
   const location = useLocation();
-  const phoneNumber = "+556999449223";
-  const whatsappNumber = "+554898462142";
+  const phoneNumber = "+5569999449223";
+  const whatsappNumber = "+5569999449223";
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços jurídicos.");
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${whatsappMessage}`;
 
