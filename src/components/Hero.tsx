@@ -4,11 +4,7 @@ import { ArrowRight, MessageCircle, Award, CheckCircle2, Scale } from "lucide-re
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
-  const phoneNumber = "+5569999449223";
-  const whatsappNumber = "+5569999449223";
-  const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[\s\(\)\-\+]/g, "")}?text=${encodeURIComponent(
-    "Olá, gostaria de uma avaliação gratuita do meu caso."
-  )}`;
+  const whatsappLink = "https://wa.me/5569999449223";
 
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
