@@ -4,8 +4,8 @@ import { ArrowRight, MessageCircle, Award, CheckCircle2, Scale } from "lucide-re
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
-  const phoneNumber = "+556999449223";
-  const whatsappNumber = "+554898462142";
+  const phoneNumber = "+5569999449223";
+  const whatsappNumber = "+5569999449223";
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[\s\(\)\-\+]/g, "")}?text=${encodeURIComponent(
     "Olá, gostaria de uma avaliação gratuita do meu caso."
   )}`;
@@ -22,12 +22,13 @@ const Hero = () => {
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background com overlay profissional */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-top bg-no-repeat"
         style={{
           backgroundImage: `url(${heroBackground})`,
+          backgroundPosition: 'center 20%',
         }}
       >
-        <div className="absolute inset-0 gradient-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-primary/90"></div>
       </div>
 
       {/* Conteúdo */}
