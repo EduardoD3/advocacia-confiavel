@@ -31,11 +31,14 @@ const Header = () => {
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <img 
-              src={profileLogo} 
-              alt="Maria José França - Advocacia" 
-              className="h-12 w-12 md:h-14 md:w-14 object-cover rounded-full ring-2 ring-primary/20"
-            />
+            <div className="h-12 w-12 md:h-14 md:w-14 rounded-full ring-2 ring-primary/20 overflow-hidden flex-shrink-0">
+              <img 
+                src={profileLogo} 
+                alt="Maria José França - Advocacia" 
+                className="w-full h-full object-cover object-top"
+                style={{ objectPosition: '50% 15%' }}
+              />
+            </div>
             <div className="flex flex-col">
               <h1 className="text-base md:text-lg font-bold text-primary leading-tight">
                 Maria José França

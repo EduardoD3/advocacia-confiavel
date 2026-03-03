@@ -8,7 +8,7 @@ const About = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
             {/* Imagem */}
             <div className="order-2 md:order-1 relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl -z-10"></div>
@@ -81,15 +81,15 @@ const About = () => {
               </div>
 
               {/* Contato */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+              <div className="flex flex-col xs:flex-row gap-3 pt-4">
                 <Button variant="default" size="sm" className="gap-2" asChild>
-                  <a href="tel:+556999449223">
+                  <a href="tel:+5569999449223">
                     <Phone className="w-4 h-4" />
                     (69) 99944-9223
                   </a>
                 </Button>
                 <Button variant="outline" size="sm" className="gap-2" asChild>
-                  <a href="mailto:contato@mjfranca.adv.br">
+                  <a href="mailto:advogadamariajose@gmail.com">
                     <Mail className="w-4 h-4" />
                     Enviar e-mail
                   </a>

@@ -66,14 +66,14 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <Link
                 key={index}
                 to={service.link}
-                className={`group bg-card rounded-xl p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 cursor-pointer ${
+                className={`group bg-card rounded-xl p-5 md:p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 cursor-pointer ${
                   service.highlighted ? "border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent" : ""
                 }`}
               >

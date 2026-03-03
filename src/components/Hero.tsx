@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100svh] md:min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background com overlay profissional */}
       <div 
         className="absolute inset-0 bg-cover bg-top bg-no-repeat"
@@ -30,17 +30,17 @@ const Hero = () => {
       {/* Conteúdo */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight animate-fade-in">
             A excelência como cultura e{" "}
             <span className="text-white">foco permanente na sua satisfação</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto mb-8 leading-relaxed px-2">
             Advocacia com estrutura dinâmica e abrangente. Equipe em contínuo processo de capacitação, 
             primando pela cautela e pela conduta absolutamente ética.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base text-white/90 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-base text-white/90 mb-10">
             <div className="flex items-center gap-2">
               <Award className="w-5 h-5" />
               <span>OAB/RO 9607</span>
@@ -57,11 +57,11 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 w-full max-w-sm sm:max-w-none mx-auto">
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="gap-2 text-base px-8 py-6 bg-white text-primary hover:bg-white/90 shadow-strong hover:shadow-elevated transition-all"
+              className="gap-2 text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 bg-white text-primary hover:bg-white/90 shadow-strong hover:shadow-elevated transition-all w-full sm:w-auto"
             >
               Avaliar meu caso
               <ArrowRight className="w-5 h-5" />
@@ -71,7 +71,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               asChild
-              className="gap-2 text-base px-8 py-6 bg-[#25D366] hover:bg-[#20BA5A] border-0 text-white shadow-strong hover:shadow-elevated transition-all"
+              className="gap-2 text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 bg-[#25D366] hover:bg-[#20BA5A] border-0 text-white shadow-strong hover:shadow-elevated transition-all w-full sm:w-auto"
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5" />
